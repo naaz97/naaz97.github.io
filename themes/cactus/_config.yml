@@ -2,12 +2,10 @@
 # Content
 ##############################################################################
 
-description: 'Just documenting random stuff that I learn.'
-
 # Link to a page that gives an overview of all your projects.
 # This can be an external link (e.g., to you GitHub profile) or to another
 # page within your website.
-projects_url: http://github.com/waasnipun
+projects_url: 
 
 # Set the page direction to RTL or LTR. default is LTR. (if you set it 'rtl', the 'vazir' font will be loaded.)
 direction: ltr
@@ -28,15 +26,15 @@ nav:
 # You can optionally add a 'label' key to set the title attribute on the link. 
 # 'icon' value will be used as title when 'label' is missing.
 social_links:
-#   -
-#     icon: github
-#     link: http://github.com/waasnipun
-#   -
-#     icon: twitter
-#     link: /
-#   -
-#     icon: facebook
-#     link: /
+  -
+    icon: github
+    link: http://github.com/waasnipun
+  -
+    icon: twitter
+    link: /
+  -
+    icon: facebook
+    link: /
   -
     icon: mail
     link: mailto:smug.gallium-0o@icloud.com

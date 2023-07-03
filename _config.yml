@@ -4,8 +4,8 @@
 
 # Site
 title: Notes
-subtitle: 'Bunch of random stuff'
-description: ''
+subtitle: 
+description: 
 keywords:
 author: 
 language: en
@@ -13,7 +13,7 @@ timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://github.com/naaz97/naaz97.github.io
+url: https://www.github.com/naaz97/naaz97.github.io
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -101,8 +101,8 @@ theme: cactus
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
-deploy:
-  type: git
-  repo: https://github.com/naaz97/naaz97.github.io
-  branch: 'gh-pages'
-  message: 'Site updated'
+# deploy:
+#   type: git
+#   repo: https://github.com/naaz97/naaz97.github.io
+#   branch: 'gh-pages'
+#   message: 'Site updated'
