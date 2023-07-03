@@ -4,16 +4,16 @@
 
 # Site
 title: Notes
-subtitle: ''
+subtitle: 'Bunch of random stuff'
 description: ''
 keywords:
-author: Nipun Waas
+author: 
 language: en
 timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: https://github.com/naaz97/naaz97.github.io
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:

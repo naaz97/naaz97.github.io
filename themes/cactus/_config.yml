@@ -2,6 +2,8 @@
 # Content
 ##############################################################################
 
+description: 'Just documenting random stuff that I learn.'
+
 # Link to a page that gives an overview of all your projects.
 # This can be an external link (e.g., to you GitHub profile) or to another
 # page within your website.
@@ -17,8 +19,7 @@ nav:
   home: /
   about: /about/
   Notes: /course-notes/
-  projects: http://github.com/waasnipun
-
+  Search: /search/
 
 # Links to your social media accounts.
 # The 'icon' keys should correspond to Fontawesome icon names
@@ -27,21 +28,21 @@ nav:
 # You can optionally add a 'label' key to set the title attribute on the link. 
 # 'icon' value will be used as title when 'label' is missing.
 social_links:
-  -
-    icon: github
-    link: http://github.com/waasnipun
-  -
-    icon: twitter
-    link: /
-  -
-    icon: facebook
-    link: /
+#   -
+#     icon: github
+#     link: http://github.com/waasnipun
+#   -
+#     icon: twitter
+#     link: /
+#   -
+#     icon: facebook
+#     link: /
   -
     icon: mail
-    link: mailto:waasnipun@gmail.com
-  -
-    icon: linkedin
-    link: https://www.linkedin.com/in/nipun-waas
+    link: mailto:smug.gallium-0o@icloud.com
+#   -
+#     icon: linkedin
+#     link: https://www.linkedin.com/in/nipun-waas
 
 # Customize the overview with displaying a tagcloud on the index page.
 # Options: https://hexo.io/docs/helpers.html#tagcloud
