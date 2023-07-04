@@ -7,7 +7,10 @@ categories: Robotics
 
 ## Perspective projection
 
-* **Vanishing point** - The vanishing point is where parallel lines receding away from you would converge on the horizon line.\
+* **Vanishing point** - The vanishing point is where parallel lines receding away from you would converge on the horizon line.
 * **Horizon** - The plane on the ground if we were receding to infinity, if there is no building behind this we can see the whole earth infront us. This is where the ground plane will intersect at infinity. \
 ![Alt text](https://github.com/naaz97/naaz97.github.io/blob/main/source/_posts/robotics:perception/image-1.png?raw=true)
+
+### The projective plane
+![Alt text](https://github.com/naaz97/naaz97.github.io/blob/main/source/_posts/robotics:perception/image-2.png?raw=true)
 
