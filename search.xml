@@ -65,7 +65,7 @@
       <link href="/2023/07/03/robotics:perception/week%201/"/>
       <url>/2023/07/03/robotics:perception/week%201/</url>
       
-        <content type="html"><![CDATA[<blockquote><p>This course is offered by coursera. You can audit the course for free. Check it out <a href="https://www.coursera.org/learn/robotics-perception/">here</a></p></blockquote><h2 id="Perspective-projection"><a href="#Perspective-projection" class="headerlink" title="Perspective projection"></a>Perspective projection</h2><p><img src="https://github.com/naaz97/naaz97.github.io/blob/main/source/_posts/robotics:perception/image.png?raw=true" alt="Alt text"></p>]]></content>
+        <content type="html"><![CDATA[<blockquote><p>This course is offered by coursera. You can audit the course for free. Check it out <a href="https://www.coursera.org/learn/robotics-perception/">here</a></p></blockquote><h2 id="Perspective-projection"><a href="#Perspective-projection" class="headerlink" title="Perspective projection"></a>Perspective projection</h2><ul><li><strong>Vanishing point</strong> - The vanishing point is where parallel lines receding away from you would converge on the horizon line.</li><li><strong>Horizon</strong> - The plane on the ground if we were receding to infinity, if there is no building behind this we can see the whole earth infront us. This is where the ground plane will intersect at infinity. <br><img src="https://github.com/naaz97/naaz97.github.io/blob/main/source/_posts/robotics:perception/image-1.png?raw=true" alt="Alt text"></li></ul>]]></content>
       
       
       <categories>
