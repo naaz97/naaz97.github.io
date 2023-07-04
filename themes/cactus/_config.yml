@@ -2,10 +2,12 @@
 # Content
 ##############################################################################
 
+description: 'Just documenting random stuff that I learn.'
+
 # Link to a page that gives an overview of all your projects.
 # This can be an external link (e.g., to you GitHub profile) or to another
 # page within your website.
-projects_url: 
+projects_url: http://github.com/waasnipun
 
 # Set the page direction to RTL or LTR. default is LTR. (if you set it 'rtl', the 'vazir' font will be loaded.)
 direction: ltr
@@ -15,10 +17,10 @@ direction: ltr
 # languages/*.yml
 nav:
   home: /
-  about: /about/
-  Notes: /course-notes/
+  articles: /archives/
+  category: /categories/
   Search: /search/
-
+  about: /about/
 # Links to your social media accounts.
 # The 'icon' keys should correspond to Fontawesome icon names
 # (see https://fontawesome.com/icons?d=gallery&s=brands);
@@ -26,15 +28,15 @@ nav:
 # You can optionally add a 'label' key to set the title attribute on the link. 
 # 'icon' value will be used as title when 'label' is missing.
 social_links:
-  -
-    icon: github
-    link: http://github.com/waasnipun
-  -
-    icon: twitter
-    link: /
-  -
-    icon: facebook
-    link: /
+#   -
+#     icon: github
+#     link: http://github.com/waasnipun
+#   -
+#     icon: twitter
+#     link: /
+#   -
+#     icon: facebook
+#     link: /
   -
     icon: mail
     link: mailto:smug.gallium-0o@icloud.com
@@ -168,11 +170,11 @@ disqus:
 
 # Fill in your Utterances data to enable Utterances comments
 utterances:
-  enabled: false
-  repo: owner/githubrepo
+  enabled: true
+  repo: naaz97/naaz97.github.io
   issue_term: pathname
   label: Comment
-  theme: github-dark
+  theme: github-light
 
 # Fill in your Google Analytics tracking ID to enable Google Analytics.
 google_analytics:

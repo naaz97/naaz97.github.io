@@ -1,5 +1,7 @@
 ---
 title: Page Template
+categories: Other
+date: 2022-07-03 23:14:35
 ---
 
 Access the template code from [here](https://www.github.com/probberechts/hexo-theme-cactus)
