@@ -54,4 +54,10 @@ y \\
         {% endkatex %}
     </center>
 
+    <center>
+    <img src="https://github.com/naaz97/naaz97.github.io/blob/main/source/_posts/robotics:perception/image-3.png?raw=true"  width="50%" height="30%">
+    </center>
+    <center>
+    <img src="https://github.com/naaz97/naaz97.github.io/blob/main/source/_posts/robotics:perception/image-4.png?raw=true"  width="50%" height="30%">
+    </center>
     
