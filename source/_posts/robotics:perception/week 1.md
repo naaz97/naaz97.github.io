@@ -17,7 +17,7 @@ categories: Robotics
 ### The projective plane
 
 <center>
-<img src="https://github.com/naaz97/naaz97.github.io/blob/main/source/_posts/robotics:perception/image-2.png?raw=true"  width="30%" height="30%">
+<img src="https://github.com/naaz97/naaz97.github.io/blob/main/source/_posts/robotics:perception/image-homo-coordinates.png?raw=true"  width="30%" height="30%">
 </center>
 
 - Homogeneous coordinates represents coordinates in 2 dimensions in 3 dimensional vector.
