@@ -208,7 +208,7 @@ if __name__ == "__main__":
 
 ### ros2 node list
 
-```ros2 node list``` will show you the names of all running nodes. 
+``ros2 node list`` will show you the names of all running nodes. 
 
 this will output something like this:
 ```bash
@@ -216,7 +216,7 @@ this will output something like this:
 ```
 ### ros2 node info
 
-```ros2 node info /first_node```returns a list of subscribers, publishers, services, and actions.
+``ros2 node info /first_node``returns a list of subscribers, publishers, services, and actions.
 
 The output should look like this:
 
