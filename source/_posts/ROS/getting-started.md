@@ -1,5 +1,8 @@
 ---
 title: Getting started with ROS2 
+tags: 
+- Robotics
+- ROS
 categories: Robotics
 ---
 

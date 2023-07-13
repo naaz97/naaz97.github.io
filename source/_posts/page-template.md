@@ -1,6 +1,6 @@
 ---
 title: Website Template
-categories: Other
+tags: other
 date: 2022-07-03 23:14:35
 ---
 
