@@ -82,6 +82,11 @@ You can build many packages at once by running colcon build in the workspace roo
 cd ~/ros2_ws
 colcon build
 ```
+source the workspace bash file
+
+```bash
+source ~/.bashrc
+```
 To build only a particular package
 ```bash
 colcon build --packages-select <package_name>
@@ -109,3 +114,129 @@ A full robotic system is comprised of many nodes working in concert. In ROS 2, a
  
 [*source*](https://docs.ros.org/en/humble/Tutorials/Beginner-CLI-Tools/Understanding-ROS2-Nodes/Understanding-ROS2-Nodes.html#id3)
 
+From now on I will be using python and ```<package_name>``` as ```my_package```.
+
+Go to the folder inside your package which names as same as your package.(i.e.```my_package```)
+
+```bash
+cd  ros2_ws/src/my_package/my_package
+```
+### create a node which logs a message
+Create a python file for you node and make it executable
+```bash
+touch my_first_node.py
+chmod +x my_first_node.py
+```
+
+Write the first node as below.
+```python
+#!/usr/bin/env python3 
+import rclpy
+from rclpy.node import Node
+
+class MyNode(Node):
+    def __init__(self):
+        super().__init__("first_node") # node name that is used when we run the node in the graph
+        self.get_logger().info("My first node message")
+
+def main(args=None):
+    rclpy.init(args=args) # initialize ros2 communication
+    node = MyNode() # creating the node object
+    rclpy.spin(node=node) # when you spin a node it is gonna be kept alive until you kills it.
+    rclpy.shutdown()
+
+if __name__ == "__main__":
+    main()
+```
+
+### Install the node
+
+Navigate to the ```setup.py``` in your package. Add a ```console script``` in the ```entry_points```. make the executable name ```test_node```
+
+```python
+entry_points={
+        'console_scripts': [
+            "test_node = my_package.my_first_node:main"
+        ],
+    },
+```
+
+### Build the package -- instructions above
+```bash
+cd ~/ros2_ws
+colcon build
+source ~/.bashrc
+```
+### Run the node
+The command ```ros2 run``` launches an executable from a package. ```ros2 run <package_name> <executable_name>```
+
+Run the below
+```bash
+ros2 run my_package test_node
+```
+
+It will output something like this
+```[INFO] [1689263569.773487669] [first_node]: My first node message```
+
+### Add a timer and a callback inside the node
+We are going to log a message at every second.
+
+```python
+#!/usr/bin/env python3 
+import rclpy
+from rclpy.node import Node
+
+class MyNode(Node):
+    def __init__(self):
+        super().__init__("first_node") 
+        self.counter_ = 0
+        self.create_timer(1.0, self.timer_callback)
+
+    def timer_callback(self):
+        self.get_logger().info("Hello " + str(self.counter_))
+        self.counter_ += 1
+
+def main(args=None):
+    rclpy.init(args=args)
+    node = MyNode() 
+    rclpy.spin(node=node)
+    rclpy.shutdown()
+
+if __name__ == "__main__":
+    main()
+```
+
+### ros2 node list
+
+```ros2 node list``` will show you the names of all running nodes. 
+
+this will output something like this:
+```bash
+/first_node
+```
+### ros2 node info
+
+```ros2 node info /first_node```returns a list of subscribers, publishers, services, and actions.
+
+The output should look like this:
+
+```bash
+/first_node
+  Subscribers:
+
+  Publishers:
+    /parameter_events: rcl_interfaces/msg/ParameterEvent
+    /rosout: rcl_interfaces/msg/Log
+  Service Servers:
+    /first_node/describe_parameters: rcl_interfaces/srv/DescribeParameters
+    /first_node/get_parameter_types: rcl_interfaces/srv/GetParameterTypes
+    /first_node/get_parameters: rcl_interfaces/srv/GetParameters
+    /first_node/list_parameters: rcl_interfaces/srv/ListParameters
+    /first_node/set_parameters: rcl_interfaces/srv/SetParameters
+    /first_node/set_parameters_atomically: rcl_interfaces/srv/SetParametersAtomically
+  Service Clients:
+
+  Action Servers:
+
+  Action Clients:
+```
