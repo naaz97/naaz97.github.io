@@ -42,7 +42,9 @@ y \\
     <center>
     <img src="https://github.com/naaz97/naaz97.github.io/blob/main/source/_posts/robotics:perception/image-2.png?raw=true"  width="50%" height="30%">
     </center>
+     
      - All rays from the origin satisfy: {% katex %} \begin{aligned} x & = ax + by + cy \end{aligned} {% endkatex %}
+     
      <center>
         {% katex %}
         \begin{bmatrix}a&b&c\end{bmatrix} 
@@ -57,7 +59,13 @@ y \\
     <center>
     <img src="https://github.com/naaz97/naaz97.github.io/blob/main/source/_posts/robotics:perception/image-3.png?raw=true"  width="50%" height="30%">
     </center>
+
     <center>
     <img src="https://github.com/naaz97/naaz97.github.io/blob/main/source/_posts/robotics:perception/image-4.png?raw=true"  width="50%" height="30%">
     </center>
-    
+
+- Projective line from two points
+
+    <center>
+    <img src="https://github.com/naaz97/naaz97.github.io/blob/main/source/_posts/robotics:perception/image-5.png?raw=true"  width="50%" height="30%">
+    </center>
