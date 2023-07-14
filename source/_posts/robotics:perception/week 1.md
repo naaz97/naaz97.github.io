@@ -45,7 +45,7 @@ y \\
     <img src="https://github.com/naaz97/naaz97.github.io/blob/main/source/_posts/robotics:perception/image-2.png?raw=true"  width="50%" height="30%">
     </center>
      
-     - All rays from the origin satisfy: {% katex %} \begin{aligned} x & = ax + by + cy \end{aligned} {% endkatex %}
+     - All rays from the origin satisfy: {% katex %} \begin{aligned} 0 & = ax + by + cz \end{aligned} {% endkatex %}
      
      <center>
         {% katex %}
