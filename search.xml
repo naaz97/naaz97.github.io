@@ -8,7 +8,7 @@
       <link href="/2023/07/18/Robotics:%20Computational%20Motion%20Planning/week%201/"/>
       <url>/2023/07/18/Robotics:%20Computational%20Motion%20Planning/week%201/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h3 id="Grassfire-Algrithm"><a href="#Grassfire-Algrithm" class="headerlink" title="Grassfire Algrithm"></a>Grassfire Algrithm</h3><h3 id="Dijkstra-Algorithm"><a href="#Dijkstra-Algorithm" class="headerlink" title="Dijkstra Algorithm"></a>Dijkstra Algorithm</h3><h3 id="A-Algorithm"><a href="#A-Algorithm" class="headerlink" title="A* Algorithm"></a>A* Algorithm</h3><h3 id="Quiz"><a href="#Quiz" class="headerlink" title="Quiz"></a>Quiz</h3><ol><li>If you use the Grassfire or breadth first search procedure to plan a path through a grid from a node A to a node B, then you use the same procedure to plan a path from node B to node A, will the two paths have the same length?<br><strong>Yes</strong><br>2.If you use the Grassfire or breadth first search procedure to plan a path through a grid from a node A to a node B, then you use the same procedure to plan a path from node B to node A, are the two paths guaranteed to be the same except in opposite directions?<br><strong>No</strong><br>3.If you use the grassfire algorithm to plan a path through a series of grids with increasing dimension, 2 dimensional, 3 dimensional, 4 dimensional etc. The amount of computational effort required increases<br>with the dimension of the problem.<br><strong>exponentially</strong><br>4.Generally speaking, which procedure would take less time to find a solution to a typical path planning problem on a discrete grid or graph?<br><strong>A</strong>*</li></ol>]]></content>
       
       
       

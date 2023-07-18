@@ -6,13 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
-    <meta property="og:type" content="article">
+    <meta name="description" content="Grassfire AlgrithmDijkstra AlgorithmA* AlgorithmQuiz If you use the Grassfire or breadth first search procedure to plan a path through a grid from a node A to a node B, then you use the same procedure">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Robotics:Computational Motion Planning:Study Notes - Week 1">
 <meta property="og:url" content="https://naaz97.github.io/2023/07/18/Robotics:%20Computational%20Motion%20Planning/week%201/index.html">
 <meta property="og:site_name" content="Notes">
+<meta property="og:description" content="Grassfire AlgrithmDijkstra AlgorithmA* AlgorithmQuiz If you use the Grassfire or breadth first search procedure to plan a path through a grid from a node A to a node B, then you use the same procedure">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2023-07-18T07:25:08.211Z">
-<meta property="article:modified_time" content="2023-07-18T07:26:10.580Z">
+<meta property="article:modified_time" content="2023-07-18T08:50:04.050Z">
 <meta property="article:tag" content="Robotics">
 <meta property="article:tag" content="Motion Planning">
 <meta name="twitter:card" content="summary">
@@ -114,6 +116,10 @@
     </div>
     
     
+      <div id="toc">
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Grassfire-Algrithm"><span class="toc-number">1.</span> <span class="toc-text">Grassfire Algrithm</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Dijkstra-Algorithm"><span class="toc-number">2.</span> <span class="toc-text">Dijkstra Algorithm</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#A-Algorithm"><span class="toc-number">3.</span> <span class="toc-text">A* Algorithm</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Quiz"><span class="toc-number">4.</span> <span class="toc-text">Quiz</span></a></li></ol>
+      </div>
+    
   </span>
 </div>
 
@@ -156,7 +162,10 @@
   
 
   <div class="content e-content" itemprop="articleBody">
-    
+    <h3 id="Grassfire-Algrithm"><a href="#Grassfire-Algrithm" class="headerlink" title="Grassfire Algrithm"></a>Grassfire Algrithm</h3><h3 id="Dijkstra-Algorithm"><a href="#Dijkstra-Algorithm" class="headerlink" title="Dijkstra Algorithm"></a>Dijkstra Algorithm</h3><h3 id="A-Algorithm"><a href="#A-Algorithm" class="headerlink" title="A* Algorithm"></a>A* Algorithm</h3><h3 id="Quiz"><a href="#Quiz" class="headerlink" title="Quiz"></a>Quiz</h3><ol>
+<li>If you use the Grassfire or breadth first search procedure to plan a path through a grid from a node A to a node B, then you use the same procedure to plan a path from node B to node A, will the two paths have the same length?<br><strong>Yes</strong><br>2.If you use the Grassfire or breadth first search procedure to plan a path through a grid from a node A to a node B, then you use the same procedure to plan a path from node B to node A, are the two paths guaranteed to be the same except in opposite directions?<br><strong>No</strong><br>3.If you use the grassfire algorithm to plan a path through a series of grids with increasing dimension, 2 dimensional, 3 dimensional, 4 dimensional etc. The amount of computational effort required increases<br>with the dimension of the problem.<br><strong>exponentially</strong><br>4.Generally speaking, which procedure would take less time to find a solution to a typical path planning problem on a discrete grid or graph?<br><strong>A</strong>*</li>
+</ol>
+
   </div>
 </article>
 
@@ -188,6 +197,10 @@
 
     
     
+      <div id="toc-footer" style="display: none">
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Grassfire-Algrithm"><span class="toc-number">1.</span> <span class="toc-text">Grassfire Algrithm</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Dijkstra-Algorithm"><span class="toc-number">2.</span> <span class="toc-text">Dijkstra Algorithm</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#A-Algorithm"><span class="toc-number">3.</span> <span class="toc-text">A* Algorithm</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Quiz"><span class="toc-number">4.</span> <span class="toc-text">Quiz</span></a></li></ol>
+      </div>
+    
 
     <div id="share-footer" style="display: none">
       <ul>
@@ -208,6 +221,8 @@
 
     <div id="actions-footer">
         <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fa-solid fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        
+          <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fa-solid fa-list fa-lg" aria-hidden="true"></i> TOC</a>
         
         <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fa-solid fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
         <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
