@@ -20,3 +20,58 @@ with the dimension of the problem.\
 **exponentially**\
 4.Generally speaking, which procedure would take less time to find a solution to a typical path planning problem on a discrete grid or graph?\
 **A***
+
+
+### Assignment: Dijkstra Algorithm
+```matlab
+% ********************************************************************* 
+% YOUR CODE BETWEEN THESE LINES OF STARS
+
+% Visit each neighbor of the current node and update the map, distances
+% and parent tables appropriately.
+offsets = [-1 0; 1 0; 0 -1; 0 1]; % Left, Right, Top, Bottom
+
+for k = 1:size(offsets, 1)
+    neighbor = [i, j] + offsets(k,:);
+    if any(neighbor < 1) || any(neighbor > [nrows, ncols])
+        continue;
+    end
+    nextNode = sub2ind(size(map), neighbor(1), neighbor(2));
+    if ((map(nextNode) ~= 2 && map(nextNode) ~= 3 && map(nextNode) ~= 5 && min_dist + 1 < distanceFromStart(nextNode)))
+        map(nextNode) = 4;
+        distanceFromStart(nextNode) = min_dist + 1;
+        parent(nextNode) = current;
+    end
+end
+numExpanded = numExpanded + 1;
+%*********************************************************************
+```
+
+
+### Assignment: Dijkstra Algorithm
+```matlab
+% *********************************************************************
+    % ALL YOUR CODE BETWEEN THESE LINES OF STARS
+    % Visit all of the neighbors around the current node and update the
+    % entries in the map, f, g and parent arrays
+    %
+    % Visit each neighbor of the current node and update the map, distances, and parent tables appropriately.
+    offsets = [-1 0; 1 0; 0 -1; 0 1]; % Left, Right, Top, Bottom
+    for k = 1:size(offsets, 1)
+        neighbor = [i, j] + offsets(k,:);
+        if any(neighbor < 1) || any(neighbor > [nrows, ncols])
+            continue;
+        end
+        nextNode = sub2ind(size(map), neighbor(1), neighbor(2));
+        if map(nextNode) ~= 2 && map(nextNode) ~= 3 && map(nextNode) ~= 5
+            tentative_g = g(current) + 1;
+            if tentative_g < g(nextNode)
+                parent(nextNode) = current;
+                g(nextNode) = tentative_g;
+                f(nextNode) = tentative_g + H(nextNode);
+                map(nextNode) = 4; % mark neighbor as on list
+            end
+        end
+    end
+    numExpanded = numExpanded + 1;
+```
