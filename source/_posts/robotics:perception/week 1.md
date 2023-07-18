@@ -1,5 +1,5 @@
 ---
-title: Robotics:Perception -- Study Notes - Week 1
+title: Robotics:Perception:Study Notes - Week 1
 tags: 
 - Robotics
 - Perception
