@@ -176,7 +176,7 @@ utterances:
   label: Comment
   theme: github-light
 
-# Fill in your Google Analytics tracking ID to enable Google Analytics.
+# Fill in your Google Analytics tracking ID to enable Google Analytics
 google_analytics:
   enabled: true
   id: G-8J2L02DXGP
